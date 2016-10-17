@@ -131,8 +131,7 @@ function setSignature(auth) {
     sendAsEmail: 'e.berkun-drevnig@neuronicworks.com',
     resource: {
       signature: `
-      Erik Berkun-Drevnig,<br>
-      Software Developer
+      Hello!!
       `
     }
   }, function(err, response) {
