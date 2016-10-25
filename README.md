@@ -2,6 +2,8 @@
 
 This script allows administrators to change email signatures en masse using a convenient mustache template.
 
+Tested with Python 2.7, you will likely need to install some dependencies using `pip` for it to work.
+
 ### Batteries Not Included
 
 Missing from this repository:
