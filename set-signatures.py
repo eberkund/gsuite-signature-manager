@@ -1,9 +1,14 @@
+#!/usr/bin/env python
+
+from __future__ import print_function
+from oauth2client.service_account import ServiceAccountCredentials
+from googleapiclient.discovery import build
+from pystache import Renderer
+from httplib2 import Http
 import csv
 import json
-from httplib2 import Http
-from oauth2client.service_account import ServiceAccountCredentials
-from apiclient.discovery import build
-from pystache import Renderer
+
+__version__ = '1.0.0'
 
 scopes = ['https://www.googleapis.com/auth/gmail.settings.basic']
 credentials = ServiceAccountCredentials.from_json_keyfile_name('keyfile.json', scopes)
@@ -19,9 +24,9 @@ def change_signature(email, name, title):
         })
     }
 
-    print 'Changing signature of %s' % email
+    print('Changing signature for %s' % email)
 
-    result = gmail.users().settings().sendAs().update(
+    gmail.users().settings().sendAs().update(
         userId='me',
         sendAsEmail=email,
         body=send_as_body

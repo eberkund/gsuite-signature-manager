@@ -1,12 +1,16 @@
 # Signature Manager
 
-This script allows administrators to change email signatures en masse using a convenient mustache template.
+Allows G Suite administrators to change email signatures en masse using a convenient mustache template.
 
-Tested with Python 2.7, you will need to install depenedencies first listed in the `requirements.txt` file
+### Setup
 
-### Batteries Not Included
+Install the dependencies using `pip`,
 
-Missing from this repository:
+```
+pip install -r requirements.txt
+```
+
+You will also need to create,
 
 - `users.csv` user email addresses, names and job titles
-- `keyfile.csv` Google [service account credentials](https://developers.google.com/identity/protocols/OAuth2ServiceAccount) available through [Developer Console](https://console.developers.google.com/iam-admin/serviceaccounts/)
+- `keyfile.json` Google [service account credentials](https://developers.google.com/identity/protocols/OAuth2ServiceAccount) available through [Developer Console](https://console.developers.google.com/iam-admin/serviceaccounts/)
