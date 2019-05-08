@@ -1,3 +1,6 @@
+![GitHub](https://img.shields.io/github/license/eberkund/gsuite-signature-manager.svg)
+![GitHub stars](https://img.shields.io/github/stars/eberkund/gsuite-signature-manager.svg)
+
 # Signature Manager
 
 Allows G Suite administrators to change email signatures en masse using a convenient mustache template.
