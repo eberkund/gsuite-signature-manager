@@ -32,7 +32,7 @@ def change_signature(email, name, title):
         body=send_as_body
     ).execute()
 
-with open('users.csv', 'rb') as f:
+with open('users.csv', 'r') as f:
     reader = csv.reader(f)
     next(reader, None)
     for row in reader:
